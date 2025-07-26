@@ -17,62 +17,47 @@ A sophisticated legal document compliance analyzer powered by Legal-BERT for enh
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-Usage
-bash
-Copy code
+```
+
+### Usage
+
 # Analyze NDA with benchmarking
+```
 python app.py document.pdf --type nda --benchmark
+```
 
 # Analyze other document types
+```
 python app.py document.pdf --type employment_contract
 python app.py document.pdf --type service_agreement
-Auto-Run Script
-For quick NDA analysis:
+```
 
-bash
-Copy code
-python auto_nda_analyzer.py
-Supported Document Types
+# Supported Document Types
 Non-Disclosure Agreements (NDA)
-
 Employment Contracts
-
 Service Agreements
-
 Lease Agreements
-
 Partnership Agreements
-
 Purchase Agreements
-
 Consulting Agreements
-
 Licensing Agreements
-
 Privacy Policies
-
 Terms of Service
-
 Performance Metrics
+
 The system provides detailed benchmarking including:
 
 System information (CPU, GPU, memory)
-
 Model loading and inference times
-
 Memory usage tracking
-
 Analysis statistics (clauses analyzed, matches found)
 
 Performance recommendations
 
 Architecture
 Legal-BERT: Specialized legal domain transformer model
-
 spaCy: Natural language processing and sentence segmentation
-
 PyTorch: Deep learning framework for model inference
-
 JSON Configuration: Flexible clause definitions and translations
 
 Attribution
