@@ -47,33 +47,30 @@ Analyzing compliance for nda document using Legal-BERT...
 ~ Clause I (survival clause) - PARTIAL EXACT: ['survive the']
 ✓ Clause J (non-circumvention) - SEMANTIC MATCH: 0.929
 
-============================================================
 LEGAL DOCUMENT COMPLIANCE ANALYSIS (Legal-BERT Enhanced)
-============================================================
+
 Document: document.pdf
 Document Type: NDA
 Analysis Date: 2025-07-26 17:26:43
-------------------------------------------------------------
+
 COMPLIANCE SCORE: 86.71% (EXCELLENT)
 RISK SCORE: 2.22/100 (LOW)
 SENSITIVITY LEVEL: LOW
 DOCUMENT CONFIDENCE: 0.96
-------------------------------------------------------------
+
 CLAUSE ANALYSIS:
    Present Clauses: A: definition of confidential information, B: scope of confidentiality, C: return of confidential materials, D: term of confidentiality, G: jurisdiction, H: exclusions from confidential information, J: non-circumvention
    Partial Clauses: E: permitted disclosures, F: remedies for breach, I: survival clause
    Missing Clauses: None
    Missing Mandatory: None
    No critical gaps detected
-------------------------------------------------------------
+
 RECOMMENDATIONS:
    • Document appears to be well-structured
    • Minor improvements may be optional
-============================================================
 
-================================================================================
 PERFORMANCE METRICS & BENCHMARKING
-================================================================================
+
 SYSTEM INFORMATION:
   Platform: Windows-10-10.0.26100-SP0
   Processor: Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
@@ -111,8 +108,6 @@ ANALYSIS STATISTICS:
   Exact Matches: 12
   Semantic Matches: 84
   Sentences Processed: 90
-
-
 ```
 
 ## Analyse other document types
