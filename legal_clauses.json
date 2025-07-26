@@ -1,0 +1,764 @@
+{
+  "nda_CLAUSE_WEIGHTS": {
+    "core": 1.0,
+    "important": 0.8,
+    "optional": 0.5
+  },
+  "REQUIRED_CLAUSES": {
+    "nda": {
+      "definition of confidential information": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "confidential information means",
+          "definition of confidential",
+          "confidential information includes",
+          "information disclosed",
+          "confidential information",
+          "confidential information shall",
+          "confidential information does not include"
+        ],
+        "description": "Clearly defines what constitutes confidential information under the agreement"
+      },
+      "scope of confidentiality": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "receiving party shall",
+          "obligations of confidentiality",
+          "protect the confidential",
+          "duty to protect"
+        ],
+        "description": "Outlines how the receiving party must protect and handle confidential information"
+      },
+      "return of confidential materials": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "return all confidential",
+          "destroy all confidential",
+          "return or destroy",
+          "disposition of confidential"
+        ],
+        "description": "Specifies requirements for returning or destroying confidential information"
+      },
+      "term of confidentiality": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "term of agreement",
+          "duration of confidentiality",
+          "confidentiality period",
+          "termination date",
+          "survive termination",
+          "survive expiration",
+          "obligations survive",
+          "confidentiality survives",
+          "five years",
+          "survive for"
+        ],
+        "description": "Defines how long the confidentiality obligations last"
+      },
+      "permitted disclosures": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "may disclose",
+          "permitted to disclose",
+          "authorized disclosure",
+          "disclosure to employees"
+        ],
+        "description": "Specifies when and to whom confidential information can be disclosed"
+      },
+      "remedies for breach": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "remedies",
+          "injunctive relief",
+          "indemnification",
+          "breach of agreement"
+        ],
+        "description": "Outlines available remedies if confidentiality is breached"
+      },
+      "jurisdiction": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "governing law",
+          "jurisdiction",
+          "courts of",
+          "governed by the laws"
+        ],
+        "description": "Specifies which laws govern the agreement and where disputes will be resolved"
+      },
+      "exclusions from confidential information": {
+        "weight": "optional",
+        "mandatory": false,
+        "alternatives": [
+          "shall not include",
+          "excludes information",
+          "not confidential information",
+          "public domain",
+          "confidential information does not include",
+          "excludes",
+          "not include"
+        ],
+        "description": "Defines what information is not considered confidential under the agreement"
+      },
+      "survival clause": {
+        "weight": "optional",
+        "mandatory": false,
+        "alternatives": [
+          "survive termination",
+          "survive expiration",
+          "obligations survive",
+          "continuing obligations",
+          "survive for",
+          "survive the",
+          "shall survive"
+        ],
+        "description": "Specifies which obligations continue after the agreement ends"
+      },
+      "non-circumvention": {
+        "weight": "optional",
+        "mandatory": false,
+        "alternatives": [
+          "non-circumvention",
+          "circumvent the agreement",
+          "direct contact",
+          "business opportunity"
+        ],
+        "description": "Prevents parties from bypassing the agreement to deal directly"
+      }
+    },
+    "employment_contract": {
+      "compensation and benefits": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "salary",
+          "compensation package",
+          "remuneration",
+          "pay rate",
+          "benefits package"
+        ],
+        "description": "Outlines the employee's salary, benefits, and other forms of compensation"
+      },
+      "work hours and schedule": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "working hours",
+          "work schedule",
+          "hours of work",
+          "business hours",
+          "work week"
+        ],
+        "description": "Defines when and how many hours the employee is expected to work"
+      },
+      "job duties and responsibilities": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "duties and responsibilities",
+          "job description",
+          "role requirements",
+          "position responsibilities",
+          "scope of work"
+        ],
+        "description": "Details the specific duties and responsibilities of the position"
+      },
+      "probationary period": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "probation period",
+          "trial period",
+          "initial period",
+          "evaluation period"
+        ],
+        "description": "Specifies the initial probationary period and conditions"
+      },
+      "termination conditions": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "termination clause",
+          "grounds for termination",
+          "contract termination",
+          "employment termination"
+        ],
+        "description": "Outlines conditions under which employment can be terminated"
+      },
+      "non-compete clause": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "non-competition",
+          "competitive activities",
+          "restrict competition",
+          "competitive restriction"
+        ],
+        "description": "Restricts employee's ability to compete with employer after employment"
+      },
+      "confidentiality agreement": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "confidentiality clause",
+          "non-disclosure",
+          "confidential information",
+          "trade secrets"
+        ],
+        "description": "Protects employer's confidential information"
+      },
+      "intellectual property rights": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "ip rights",
+          "intellectual property ownership",
+          "work product",
+          "inventions"
+        ],
+        "description": "Defines ownership of intellectual property created during employment"
+      },
+      "leave policies": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "vacation policy",
+          "sick leave",
+          "time off",
+          "holiday entitlement"
+        ],
+        "description": "Details various types of leave and related policies"
+      },
+      "workplace policies": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "company policies",
+          "workplace rules",
+          "code of conduct",
+          "employee handbook"
+        ],
+        "description": "References or includes key workplace policies and procedures"
+      }
+    },
+    "service_agreement": {
+      "scope of services": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "services provided",
+          "service description",
+          "scope of work",
+          "deliverables"
+        ],
+        "description": "Clearly defines the services to be provided under the agreement"
+      },
+      "payment terms": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "compensation",
+          "fees and payment",
+          "payment schedule",
+          "billing terms"
+        ],
+        "description": "Specifies payment amounts, schedules, and methods"
+      },
+      "term and termination": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "agreement duration",
+          "contract period",
+          "termination rights",
+          "termination notice"
+        ],
+        "description": "Defines the duration and conditions for termination"
+      },
+      "performance standards": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "quality standards",
+          "service levels",
+          "performance metrics",
+          "quality requirements"
+        ],
+        "description": "Establishes expected quality and performance standards"
+      },
+      "warranties": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "service warranty",
+          "guarantees",
+          "representations",
+          "quality assurance"
+        ],
+        "description": "Outlines warranties and guarantees for the services"
+      }
+    },
+    "lease_agreement": {
+      "property description": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "premises",
+          "leased property",
+          "rental property",
+          "property details"
+        ],
+        "description": "Identifies and describes the leased property"
+      },
+      "rent and payment": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "rental payment",
+          "payment terms",
+          "monthly rent",
+          "rent schedule"
+        ],
+        "description": "Specifies rent amount, due dates, and payment methods"
+      },
+      "lease term": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "duration of lease",
+          "term of tenancy",
+          "lease period",
+          "rental period"
+        ],
+        "description": "Defines the duration of the lease"
+      },
+      "security deposit": {
+        "weight": "important",
+        "mandatory": true,
+        "alternatives": [
+          "deposit amount",
+          "damage deposit",
+          "security payment",
+          "deposit terms"
+        ],
+        "description": "Details regarding security deposit amount and terms"
+      },
+      "maintenance responsibilities": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "repairs and maintenance",
+          "property upkeep",
+          "maintenance duties",
+          "repair obligations"
+        ],
+        "description": "Outlines maintenance and repair responsibilities"
+      }
+    },
+    "partnership_agreement": {
+      "partnership structure": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "business structure",
+          "ownership structure",
+          "partnership type",
+          "organizational structure"
+        ],
+        "description": "Defines the structure and type of partnership"
+      },
+      "capital contributions": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "initial investment",
+          "partner contributions",
+          "capital investment",
+          "financial contributions"
+        ],
+        "description": "Specifies initial and ongoing capital contributions"
+      },
+      "profit and loss sharing": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "profit distribution",
+          "loss allocation",
+          "revenue sharing",
+          "financial distribution"
+        ],
+        "description": "Details how profits and losses will be shared"
+      },
+      "management rights": {
+        "weight": "important",
+        "mandatory": true,
+        "alternatives": [
+          "decision making",
+          "voting rights",
+          "management authority",
+          "partner powers"
+        ],
+        "description": "Establishes management and decision-making rights"
+      },
+      "exit provisions": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "withdrawal rights",
+          "partner exit",
+          "buyout provisions",
+          "dissolution terms"
+        ],
+        "description": "Outlines procedures for partner exit or dissolution"
+      }
+    },
+    "purchase_agreement": {
+      "product description": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "goods description",
+          "item details",
+          "purchased items",
+          "product specifications"
+        ],
+        "description": "Describes the products or goods being purchased"
+      },
+      "purchase price": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "price terms",
+          "payment amount",
+          "consideration",
+          "purchase amount"
+        ],
+        "description": "Specifies the purchase price and payment terms"
+      },
+      "delivery terms": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "shipping terms",
+          "delivery schedule",
+          "delivery method",
+          "shipping details"
+        ],
+        "description": "Outlines delivery or shipping arrangements"
+      },
+      "warranties": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "product warranty",
+          "quality guarantee",
+          "warranty terms",
+          "guarantee provisions"
+        ],
+        "description": "Details product warranties and guarantees"
+      },
+      "return policy": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "return terms",
+          "refund policy",
+          "return conditions",
+          "exchange policy"
+        ],
+        "description": "Specifies conditions for returns or refunds"
+      }
+    },
+    "consulting_agreement": {
+      "scope of consulting": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "consulting services",
+          "scope of work",
+          "service description",
+          "project scope"
+        ],
+        "description": "Defines the consulting services to be provided"
+      },
+      "compensation": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "consulting fees",
+          "payment terms",
+          "fee structure",
+          "billing rates"
+        ],
+        "description": "Specifies consultant compensation and payment terms"
+      },
+      "term and termination": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "agreement duration",
+          "contract term",
+          "termination rights",
+          "contract period"
+        ],
+        "description": "Defines duration and termination conditions"
+      },
+      "deliverables": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "work product",
+          "project deliverables",
+          "expected outcomes",
+          "delivery items"
+        ],
+        "description": "Outlines expected deliverables and outcomes"
+      },
+      "independent contractor": {
+        "weight": "important",
+        "mandatory": true,
+        "alternatives": [
+          "contractor status",
+          "relationship of parties",
+          "independent status",
+          "non-employee status"
+        ],
+        "description": "Establishes independent contractor relationship"
+      }
+    },
+    "licensing_agreement": {
+      "license grant": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "grant of rights",
+          "licensed rights",
+          "scope of license",
+          "rights granted"
+        ],
+        "description": "Defines the scope and nature of the license granted"
+      },
+      "royalties": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "license fees",
+          "payment terms",
+          "royalty rates",
+          "financial terms"
+        ],
+        "description": "Specifies royalty rates and payment terms"
+      },
+      "term and territory": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "license duration",
+          "geographic scope",
+          "territorial rights",
+          "license period"
+        ],
+        "description": "Defines duration and geographic scope of license"
+      },
+      "quality control": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "quality standards",
+          "quality requirements",
+          "quality assurance",
+          "quality maintenance"
+        ],
+        "description": "Establishes quality control requirements"
+      },
+      "sublicensing rights": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "sublicense terms",
+          "sublicensing rights",
+          "right to sublicense",
+          "sublicense restrictions"
+        ],
+        "description": "Specifies rights regarding sublicensing"
+      }
+    },
+    "privacy_policy": {
+      "data collection": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "information collected",
+          "data gathering",
+          "collected information",
+          "data types"
+        ],
+        "description": "Describes what personal data is collected"
+      },
+      "data usage": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "use of information",
+          "data processing",
+          "information usage",
+          "data purposes"
+        ],
+        "description": "Explains how collected data is used"
+      },
+      "data sharing": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "information sharing",
+          "third party disclosure",
+          "data disclosure",
+          "sharing practices"
+        ],
+        "description": "Details how and with whom data is shared"
+      },
+      "user rights": {
+        "weight": "important",
+        "mandatory": true,
+        "alternatives": [
+          "data rights",
+          "privacy rights",
+          "user control",
+          "data access rights"
+        ],
+        "description": "Outlines users' rights regarding their data"
+      },
+      "security measures": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "data security",
+          "security practices",
+          "protection measures",
+          "security protocols"
+        ],
+        "description": "Describes data security measures"
+      }
+    },
+    "terms_of_service": {
+      "service access": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "service usage",
+          "access rights",
+          "use of service",
+          "service terms"
+        ],
+        "description": "Defines terms of service access and usage"
+      },
+      "user obligations": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "user responsibilities",
+          "user conduct",
+          "acceptable use",
+          "user requirements"
+        ],
+        "description": "Outlines user responsibilities and obligations"
+      },
+      "service limitations": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "liability limits",
+          "service restrictions",
+          "use limitations",
+          "warranty disclaimers"
+        ],
+        "description": "Specifies service limitations and restrictions"
+      },
+      "termination rights": {
+        "weight": "important",
+        "mandatory": true,
+        "alternatives": [
+          "account termination",
+          "service cancellation",
+          "termination terms",
+          "cancellation rights"
+        ],
+        "description": "Details conditions for service termination"
+      },
+      "dispute resolution": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "conflict resolution",
+          "dispute handling",
+          "resolution process",
+          "arbitration terms"
+        ],
+        "description": "Outlines process for resolving disputes"
+      }
+    },
+    "other": {
+      "general provisions": {
+        "weight": "core",
+        "mandatory": true,
+        "alternatives": [
+          "miscellaneous terms",
+          "general terms",
+          "other provisions",
+          "additional terms"
+        ],
+        "description": "Contains general or miscellaneous provisions"
+      },
+      "amendments": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "modifications",
+          "changes",
+          "amendment process",
+          "modification terms"
+        ],
+        "description": "Specifies how agreement can be modified"
+      },
+      "notices": {
+        "weight": "important",
+        "mandatory": false,
+        "alternatives": [
+          "notice requirements",
+          "communication",
+          "notification process",
+          "notice delivery"
+        ],
+        "description": "Details requirements for formal notices"
+      },
+      "force majeure": {
+        "weight": "optional",
+        "mandatory": false,
+        "alternatives": [
+          "unforeseen events",
+          "extraordinary circumstances",
+          "acts of god",
+          "external events"
+        ],
+        "description": "Addresses unforeseeable circumstances"
+      },
+      "severability": {
+        "weight": "optional",
+        "mandatory": false,
+        "alternatives": [
+          "severability clause",
+          "partial invalidity",
+          "invalid provisions",
+          "clause independence"
+        ],
+        "description": "Addresses enforceability of separate provisions"
+      }
+    }
+  }
+} 

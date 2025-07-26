@@ -1,0 +1,89 @@
+{
+  "nda": {
+    "A": "definition of confidential information",
+    "B": "scope of confidentiality",
+    "C": "return of confidential materials",
+    "D": "term of confidentiality",
+    "E": "permitted disclosures",
+    "F": "remedies for breach",
+    "G": "jurisdiction",
+    "H": "exclusions from confidential information",
+    "I": "survival clause",
+    "J": "non-circumvention"
+  },
+  "employment_contract": {
+    "A": "compensation and benefits",
+    "B": "work hours and schedule",
+    "C": "job duties and responsibilities",
+    "D": "probationary period",
+    "E": "termination conditions",
+    "F": "non-compete clause",
+    "G": "confidentiality agreement",
+    "H": "intellectual property rights",
+    "I": "leave policies",
+    "J": "workplace policies"
+  },
+  "service_agreement": {
+    "A": "scope of services",
+    "B": "payment terms",
+    "C": "term and termination",
+    "D": "performance standards",
+    "E": "warranties"
+  },
+  "lease_agreement": {
+    "A": "property description",
+    "B": "rent and payment",
+    "C": "lease term",
+    "D": "security deposit",
+    "E": "maintenance responsibilities"
+  },
+  "partnership_agreement": {
+    "A": "partnership structure",
+    "B": "capital contributions",
+    "C": "profit and loss sharing",
+    "D": "management rights",
+    "E": "exit provisions"
+  },
+  "purchase_agreement": {
+    "A": "product description",
+    "B": "purchase price",
+    "C": "delivery terms",
+    "D": "warranties",
+    "E": "return policy"
+  },
+  "consulting_agreement": {
+    "A": "scope of consulting",
+    "B": "compensation",
+    "C": "term and termination",
+    "D": "deliverables",
+    "E": "independent contractor"
+  },
+  "licensing_agreement": {
+    "A": "license grant",
+    "B": "royalties",
+    "C": "term and territory",
+    "D": "quality control",
+    "E": "sublicensing rights"
+  },
+  "privacy_policy": {
+    "A": "data collection",
+    "B": "data usage",
+    "C": "data sharing",
+    "D": "user rights",
+    "E": "security measures"
+  },
+  "terms_of_service": {
+    "A": "service access",
+    "B": "user obligations",
+    "C": "service limitations",
+    "D": "termination rights",
+    "E": "dispute resolution"
+  },
+  "other": {
+    "A": "general provisions",
+    "B": "amendments",
+    "C": "notices",
+    "D": "force majeure",
+    "E": "severability"
+  }
+} 

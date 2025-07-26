@@ -1,0 +1,6 @@
+PyPDF2
+spacy
+torch
+transformers
+scikit-learn
+numpy 
