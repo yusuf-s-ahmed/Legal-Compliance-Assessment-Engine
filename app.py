@@ -233,8 +233,9 @@ def analyze_clause_with_semantics(text, clause_info, document_type, use_legal_be
             # Analyze each sentence
             for sentence in sentences[:15]:  # Limit for performance
                 sentences_processed += 1  # Increment counter
+                # Increase threshold from 0.5 to 0.7 for better precision
                 similarity, is_match = get_semantic_similarity_legal_bert(
-                    sentence, clause_description, threshold=0.5
+                    sentence, clause_description, threshold=0.7  # Was 0.5
                 )
                 if is_match:
                     semantic_matches.append({
@@ -305,6 +306,105 @@ def translate_clause_letters(letters, document_type, translations):
     
     return ", ".join(translated)
 
+def detect_document_type(text):
+    """Automatically detect document type based on content"""
+    text_lower = text.lower()
+    
+    # NDA indicators
+    nda_indicators = [
+        'non-disclosure agreement', 'nda', 'confidentiality agreement', 
+        'receiving party', 'disclosing party', 'confidential information',
+        'non-disclosure', 'confidentiality obligations', 'trade secrets'
+    ]
+    nda_score = sum(1 for indicator in nda_indicators if indicator in text_lower)
+    
+    # Employment contract indicators
+    employment_indicators = [
+        'employment agreement', 'employee', 'employer', 'salary', 
+        'compensation', 'job duties', 'work schedule', 'employment contract',
+        'probation period', 'termination of employment', 'workplace policies'
+    ]
+    employment_score = sum(1 for indicator in employment_indicators if indicator in text_lower)
+    
+    # Service agreement indicators
+    service_indicators = [
+        'service agreement', 'services provided', 'service description',
+        'consulting services', 'professional services', 'service provider'
+    ]
+    service_score = sum(1 for indicator in service_indicators if indicator in text_lower)
+    
+    # Lease agreement indicators
+    lease_indicators = [
+        'lease agreement', 'rental agreement', 'tenant', 'landlord',
+        'premises', 'rent', 'security deposit', 'lease term'
+    ]
+    lease_score = sum(1 for indicator in lease_indicators if indicator in text_lower)
+    
+    # Partnership agreement indicators
+    partnership_indicators = [
+        'partnership agreement', 'partners', 'partnership', 'capital contributions',
+        'profit sharing', 'partnership structure'
+    ]
+    partnership_score = sum(1 for indicator in partnership_indicators if indicator in text_lower)
+    
+    # Purchase agreement indicators
+    purchase_indicators = [
+        'purchase agreement', 'purchase price', 'buyer', 'seller',
+        'goods', 'products', 'delivery terms'
+    ]
+    purchase_score = sum(1 for indicator in purchase_indicators if indicator in text_lower)
+    
+    # Consulting agreement indicators
+    consulting_indicators = [
+        'consulting agreement', 'consultant', 'consulting services',
+        'independent contractor', 'consulting fees'
+    ]
+    consulting_score = sum(1 for indicator in consulting_indicators if indicator in text_lower)
+    
+    # Licensing agreement indicators
+    licensing_indicators = [
+        'licensing agreement', 'license', 'licensor', 'licensee',
+        'royalties', 'intellectual property license'
+    ]
+    licensing_score = sum(1 for indicator in licensing_indicators if indicator in text_lower)
+    
+    # Privacy policy indicators
+    privacy_indicators = [
+        'privacy policy', 'data collection', 'personal information',
+        'data protection', 'privacy rights'
+    ]
+    privacy_score = sum(1 for indicator in privacy_indicators if indicator in text_lower)
+    
+    # Terms of service indicators
+    tos_indicators = [
+        'terms of service', 'terms and conditions', 'user agreement',
+        'service terms', 'acceptable use'
+    ]
+    tos_score = sum(1 for indicator in tos_indicators if indicator in text_lower)
+    
+    # Find the highest scoring document type
+    scores = {
+        'nda': nda_score,
+        'employment_contract': employment_score,
+        'service_agreement': service_score,
+        'lease_agreement': lease_score,
+        'partnership_agreement': partnership_score,
+        'purchase_agreement': purchase_score,
+        'consulting_agreement': consulting_score,
+        'licensing_agreement': licensing_score,
+        'privacy_policy': privacy_score,
+        'terms_of_service': tos_score
+    }
+    
+    # Get the document type with the highest score
+    detected_type = max(scores, key=scores.get)
+    
+    # Only return the detected type if it has a reasonable score
+    if scores[detected_type] >= 2:  # At least 2 indicators found
+        return detected_type
+    else:
+        return 'other'  # Default to 'other' if no clear indicators
+
 def parse_pdf(pdf_path):
     """Parse a PDF file and extract its content"""
     start_timer('pdf_parsing')
@@ -348,6 +448,14 @@ def analyze_legal_compliance_enhanced(text, document_type, clauses_data, use_leg
             'documentConfidenceScore': 0.00,
             'hasSalaryOrCompensation': 0
         }
+    
+    # Add document type validation
+    detected_type = detect_document_type(text)
+    if detected_type != document_type:
+        print(f"   WARNING: Document appears to be a {detected_type.upper()}, not {document_type.upper()}")
+        print(f"   Detected indicators: {detected_type}")
+        print(f"   Requested analysis: {document_type}")
+        print("   Consider re-running with correct document type for accurate results")
     
     # Extract clause weights and required clauses from loaded data
     NDA_CLAUSE_WEIGHTS = clauses_data.get('nda_CLAUSE_WEIGHTS', {})
@@ -611,15 +719,15 @@ def print_performance_metrics():
     # Performance Recommendations
     print("\nPERFORMANCE RECOMMENDATIONS:")
     if total_time > 30:
-        print("  ⚠️  Analysis time is high. Consider:")
+        print("     Analysis time is high. Consider:")
         print("     - Using GPU acceleration")
         print("     - Reducing sentence analysis limit")
         print("     - Using fallback analysis mode")
     elif total_time < 5:
-        print("  ✅ Analysis time is excellent")
+        print("     Analysis time is excellent")
     
     if final_memory > 2000:  # 2GB
-        print("  ⚠️  High memory usage. Consider:")
+        print("     High memory usage. Consider:")
         print("     - Using smaller model")
         print("     - Processing in batches")
     
