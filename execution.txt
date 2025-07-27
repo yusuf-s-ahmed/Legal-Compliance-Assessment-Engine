@@ -1,0 +1,10 @@
+python app.py document.pdf --type nda --benchmark
+
+python app.py document2.pdf --type lease_agreement --benchmark
+
+python app.py document3.pdf --type service_agreement --benchmark
+
+
+curl -X POST "http://localhost:8000/analyze" -F "file=@document.pdf" -F "document_type=nda" -F "enable_benchmark=true"
+
+curl -X POST "http://localhost:8000/analyze" -F "file=@document2.pdf" -F "document_type=lease_agreement" -F "enable_benchmark=true"

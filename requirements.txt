@@ -1,6 +1,8 @@
-PyPDF2
-spacy
-torch
-transformers
-scikit-learn
-numpy 
+PyPDF2==3.0.1
+spacy==3.8.7
+torch==2.7.1+cpu
+transformers==4.45.0
+scikit-learn==1.5.2
+fastapi==0.115.6
+uvicorn==0.32.1
+python-multipart==0.0.20
