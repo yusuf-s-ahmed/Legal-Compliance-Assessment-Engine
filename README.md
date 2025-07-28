@@ -2,6 +2,17 @@
 
 A legal document compliance analyser powered by Legal-BERT for enhanced semantic understanding of legal clauses.
 
+## Table of Contents
+
+- [Quick start](#quick-start)
+- [Usage](#usage)
+- [Output](#output)
+- [Command Usage Example](#command-usage-example)
+- [Supported Document Types](#supported-document-types)
+- [Benchmarking Details](#benchmarking-details)
+- [Architecture](#architecture)
+- [Attribution](#attribution)
+
 ## Features
 
 - Legal-BERT Integration: Uses specialised legal domain model for accurate clause detection  
@@ -146,12 +157,12 @@ ANALYSIS STATISTICS:
   Sentences Processed: 90
 ```
 
-### Command Usage Example
+## Command Usage Example
 ```
 python app.py <document.pdf> --type <document_type>
 ```
 
-### Supported Document Types
+## Supported Document Types
 - Non-Disclosure Agreements (NDA)
 - Employment Contracts
 - Service Agreements
@@ -164,7 +175,7 @@ python app.py <document.pdf> --type <document_type>
 - Terms of Service
 - Performance Metrics
 
-### The system provides detailed benchmarking including:
+## The system provides detailed benchmarking including:
 
 - System information (CPU, GPU, memory)
 - Model loading and inference times
@@ -172,12 +183,12 @@ python app.py <document.pdf> --type <document_type>
 - Analysis statistics (clauses analysed, matches found)
 - Performance recommendations
 
-### Architecture
+## Architecture
 - Legal-BERT: Specialised legal domain transformer model
 - spaCy: Natural language processing and sentence segmentation
 - PyTorch: Deep learning framework for model inference
 - JSON Configuration: Flexible clause definitions and translations
 
-### Attribution
+## Attribution
 This product includes Legal-BERT, developed by Ioannis Chalkidis et al. at the National and Kapodistrian University of Athens, released under the MIT License.
 https://huggingface.co/nlpaueb/legal-bert-base-uncased
