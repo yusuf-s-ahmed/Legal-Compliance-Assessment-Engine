@@ -21,26 +21,26 @@ python -m spacy download en_core_web_sm
 
 ## Usage
 
-### Run the API Server
+1. Run the API Server
 ```
 python api_server.py
 ```
 
-### Calling the API Using Command Prompt
+2. Call the API Using Command Prompt
 
-### Health check
+- Health check
 ```
 curl http://localhost:8000/health
 ```
 
-### API endpoint commands (using /analyse endpoint)
+- API endpoint commands (using /analyse endpoint)
 ```
 curl -X POST "http://localhost:8000/analyse" -F "file=@document.pdf" -F "document_type=nda" -F "enable_benchmark=true"
 curl -X POST "http://localhost:8000/analyse" -F "file=@document2.pdf" -F "document_type=lease_agreement" -F "enable_benchmark=true"
 curl -X POST "http://localhost:8000/analyse" -F "file=@document3.pdf" -F "document_type=service_agreement" -F "enable_benchmark=true"
 ```
 
-### Analyse Main Application Directly with benchmarking
+Or optionally, analyse the main application directly with benchmarking
 ```
 python app.py document.pdf --type nda --benchmark
 ```
