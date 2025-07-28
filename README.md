@@ -19,9 +19,28 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-### Usage
+## Usage
 
-## Analyse Sample NDA with benchmarking
+## Run the API Server
+```
+python api_server.py
+```
+
+## Calling the API Using Command Prompt
+
+### Health check
+```
+curl http://localhost:8000/health
+```
+
+### API endpoint commands (using /analyse endpoint)
+```
+curl -X POST "http://localhost:8000/analyse" -F "file=@document.pdf" -F "document_type=nda" -F "enable_benchmark=true"
+curl -X POST "http://localhost:8000/analyse" -F "file=@document2.pdf" -F "document_type=lease_agreement" -F "enable_benchmark=true"
+curl -X POST "http://localhost:8000/analyse" -F "file=@document3.pdf" -F "document_type=service_agreement" -F "enable_benchmark=true"
+```
+
+## Analyse Main Application Directly with benchmarking
 ```
 python app.py document.pdf --type nda --benchmark
 ```
@@ -35,7 +54,9 @@ Loading legal clause definitions...
 Loading clause translations...
 Parsing PDF: document.pdf
 Extracted 6803 characters of text
-Analyzing compliance for nda document using Legal-BERT...
+
+Analysing compliance for nda document using Legal-BERT...
+
 ✓ Clause A (definition of confidential information) - EXACT MATCH: ['information disclosed', 'confidential information', 'confidential information does not include']
 ✓ Clause B (scope of confidentiality) - EXACT MATCH: ['receiving party shall', 'obligations of confidentiality']
 ✓ Clause C (return of confidential materials) - SEMANTIC MATCH: 0.970
