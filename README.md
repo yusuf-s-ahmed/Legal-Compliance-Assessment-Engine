@@ -31,11 +31,13 @@ python api_server.py
 
 ```
 # Health check
+
 curl http://localhost:8000/health
 ```
 
 ```
 API endpoint commands (using /analyse endpoint)
+
 curl -X POST "http://localhost:8000/analyse" -F "file=@document.pdf" -F "document_type=nda" -F "enable_benchmark=true"
 curl -X POST "http://localhost:8000/analyse" -F "file=@document2.pdf" -F "document_type=lease_agreement" -F "enable_benchmark=true"
 curl -X POST "http://localhost:8000/analyse" -F "file=@document3.pdf" -F "document_type=service_agreement" -F "enable_benchmark=true"
