@@ -48,7 +48,7 @@ Or optionally, analyse the main application directly with benchmarking
 python app.py document.pdf --type nda --benchmark
 ```
 
-### Output 
+## Output 
 ```
 Loading Legal-BERT model...
 Legal-BERT loaded successfully on cpu
