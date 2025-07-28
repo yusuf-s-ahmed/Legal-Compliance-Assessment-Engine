@@ -134,10 +134,9 @@ ANALYSIS STATISTICS:
   Sentences Processed: 90
 ```
 
-### Command Usage Instructions
+### Command Usage Example
 ```
-python app.py <document.pdf> --type <employment_contract>
-python app.py <document.pdf> --type <service_agreement>
+python app.py <document.pdf> --type <document_type>
 ```
 
 ### Supported Document Types
