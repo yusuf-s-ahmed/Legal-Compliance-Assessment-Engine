@@ -1,4 +1,4 @@
-# Legal Compliance Analytics Engine
+# Legal Compliance Assessment Engine
 
 A legal document compliance analyser powered by Legal-BERT for enhanced semantic understanding of legal clauses.
 
