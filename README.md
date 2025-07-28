@@ -1,6 +1,6 @@
 # Legal Compliance Assessment Engine
 
-Legal Compliance Analytics Engine is a sophisticated legal document analysis platform powered by Legal-BERT, delivering enterprise-grade semantic understanding of legal clauses and compliance requirements. Built with advanced transformer architecture specifically trained on legal corpora, it provides deep contextual analysis that transcends traditional keyword matching approaches.
+This legal document analysis engine powered by Legal-BERT, delivers semantic understanding of legal clauses and compliance requirements. Built with advanced transformer architecture specifically trained on legal corpora, it provides deep contextual analysis that transcends traditional keyword matching approaches.
 
 The engine supports comprehensive analysis across multiple document types including Non-Disclosure Agreements (NDAs), employment contracts, lease agreements, service agreements, and partnership contracts. It leverages Legal-BERT's specialised legal-domain knowledge combined with spaCy's advanced natural language processing for precise sentence segmentation and semantic similarity scoring.
 
