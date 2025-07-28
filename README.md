@@ -134,10 +134,10 @@ ANALYSIS STATISTICS:
   Sentences Processed: 90
 ```
 
-### Analyse other document types
+### Command Usage Instructions
 ```
-python app.py document.pdf --type employment_contract
-python app.py document.pdf --type service_agreement
+python app.py <document.pdf> --type <employment_contract>
+python app.py <document.pdf> --type <service_agreement>
 ```
 
 ### Supported Document Types
