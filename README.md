@@ -12,7 +12,7 @@ A legal document compliance analyser powered by Legal-BERT for enhanced semantic
 
 ## Quick Start
 
-Prerequisites
+1. Prerequisites
 
 ```bash
 pip install -r requirements.txt
@@ -43,7 +43,7 @@ curl -X POST "http://localhost:8000/analyse" -F "file=@document2.pdf" -F "docume
 curl -X POST "http://localhost:8000/analyse" -F "file=@document3.pdf" -F "document_type=service_agreement" -F "enable_benchmark=true"
 ```
 
-Or optionally, analyse the main application directly with benchmarking
+3. Or optionally, analyse the main application directly with benchmarking
 ```
 python app.py document.pdf --type nda --benchmark
 ```
