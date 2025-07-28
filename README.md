@@ -19,6 +19,18 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
+3. Or, download the packages independently
+```
+PyPDF2
+spacy
+torch
+transformers
+scikit-learn
+fastapi
+uvicorn
+python-multipart
+```
+
 ## Usage
 
 1. Run the API Server
