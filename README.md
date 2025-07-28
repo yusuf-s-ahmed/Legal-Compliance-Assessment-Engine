@@ -21,12 +21,12 @@ python -m spacy download en_core_web_sm
 
 ## Usage
 
-## Run the API Server
+### Run the API Server
 ```
 python api_server.py
 ```
 
-## Calling the API Using Command Prompt
+### Calling the API Using Command Prompt
 
 ### Health check
 ```
@@ -40,12 +40,12 @@ curl -X POST "http://localhost:8000/analyse" -F "file=@document2.pdf" -F "docume
 curl -X POST "http://localhost:8000/analyse" -F "file=@document3.pdf" -F "document_type=service_agreement" -F "enable_benchmark=true"
 ```
 
-## Analyse Main Application Directly with benchmarking
+### Analyse Main Application Directly with benchmarking
 ```
 python app.py document.pdf --type nda --benchmark
 ```
 
-## Output 
+### Output 
 ```
 Loading Legal-BERT model...
 Legal-BERT loaded successfully on cpu
@@ -131,13 +131,13 @@ ANALYSIS STATISTICS:
   Sentences Processed: 90
 ```
 
-## Analyse other document types
+### Analyse other document types
 ```
 python app.py document.pdf --type employment_contract
 python app.py document.pdf --type service_agreement
 ```
 
-## Supported Document Types
+### Supported Document Types
 - Non-Disclosure Agreements (NDA)
 - Employment Contracts
 - Service Agreements
@@ -150,7 +150,7 @@ python app.py document.pdf --type service_agreement
 - Terms of Service
 - Performance Metrics
 
-## The system provides detailed benchmarking including:
+### The system provides detailed benchmarking including:
 
 - System information (CPU, GPU, memory)
 - Model loading and inference times
@@ -158,12 +158,12 @@ python app.py document.pdf --type service_agreement
 - Analysis statistics (clauses analysed, matches found)
 - Performance recommendations
 
-## Architecture
+### Architecture
 - Legal-BERT: Specialised legal domain transformer model
 - spaCy: Natural language processing and sentence segmentation
 - PyTorch: Deep learning framework for model inference
 - JSON Configuration: Flexible clause definitions and translations
 
-## Attribution
+### Attribution
 This product includes Legal-BERT, developed by Ioannis Chalkidis et al. at the National and Kapodistrian University of Athens, released under the MIT License.
 https://huggingface.co/nlpaueb/legal-bert-base-uncased
