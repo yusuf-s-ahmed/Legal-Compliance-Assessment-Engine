@@ -1,6 +1,12 @@
 # Legal Compliance Assessment Engine
 
-A legal document compliance analyser powered by Legal-BERT for enhanced semantic understanding of legal clauses.
+Legal Compliance Analytics Engine is a sophisticated legal document analysis platform powered by Legal-BERT, delivering enterprise-grade semantic understanding of legal clauses and compliance requirements. Built with advanced transformer architecture specifically trained on legal corpora, it provides deep contextual analysis that transcends traditional keyword matching approaches.
+
+The engine supports comprehensive analysis across multiple document types including Non-Disclosure Agreements (NDAs), employment contracts, lease agreements, service agreements, and partnership contracts. It leverages Legal-BERT's specialised legal-domain knowledge combined with spaCy's advanced natural language processing for precise sentence segmentation and semantic similarity scoring.
+
+The system employs a hybrid approach combining Legal-BERT's semantic embeddings with spaCy's linguistic analysis, enabling precise clause identification through cosine similarity scoring and contextual understanding. The FastAPI-based REST API ensures high-performance, scalable document processing with persistent model loading for optimal throughput.
+
+This engine represents a significant advancement over traditional legal document analysis tools, providing the depth and accuracy required for enterprise legal compliance operations while maintaining the performance and scalability needed for high-volume document processing environments.
 
 ## Table of Contents
 
@@ -12,14 +18,6 @@ A legal document compliance analyser powered by Legal-BERT for enhanced semantic
 - [Benchmarking Details](#benchmarking-details)
 - [Architecture](#architecture)
 - [Attribution](#attribution)
-
-## Features
-
-- Legal-BERT Integration: Uses specialised legal domain model for accurate clause detection  
-- Multi-Document Support: Analyses NDAs, employment contracts, service agreements, and more  
-- Semantic Analysis: Goes beyond keyword matching with contextual understanding, uses spaCy for sentence splitting
-- Performance Benchmarking: Comprehensive metrics for system optimisation  
-- Risk Assessment: Calculates compliance scores and identifies critical gaps  
 
 ## Quick Start
 
