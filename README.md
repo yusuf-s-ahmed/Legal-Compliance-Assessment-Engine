@@ -4,11 +4,11 @@ A legal document compliance analyser powered by Legal-BERT for enhanced semantic
 
 ## Features
 
-- **Legal-BERT Integration**: Uses specialised legal domain model for accurate clause detection  
-- **Multi-Document Support**: Analyses NDAs, employment contracts, service agreements, and more  
-- **Semantic Analysis**: Goes beyond keyword matching with contextual understanding, uses spaCy for sentence splitting
-- **Performance Benchmarking**: Comprehensive metrics for system optimisation  
-- **Risk Assessment**: Calculates compliance scores and identifies critical gaps  
+- Legal-BERT Integration: Uses specialised legal domain model for accurate clause detection  
+- Multi-Document Support: Analyses NDAs, employment contracts, service agreements, and more  
+- Semantic Analysis: Goes beyond keyword matching with contextual understanding, uses spaCy for sentence splitting
+- Performance Benchmarking: Comprehensive metrics for system optimisation  
+- Risk Assessment: Calculates compliance scores and identifies critical gaps  
 
 ## Quick Start
 
