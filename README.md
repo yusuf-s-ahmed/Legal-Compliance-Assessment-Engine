@@ -19,7 +19,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-3. Or, download the packages independently
+2. Or, download the packages independently
 ```
 PyPDF2
 spacy
