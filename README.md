@@ -12,7 +12,7 @@ A legal document compliance analyser powered by Legal-BERT for enhanced semantic
 
 ## Quick Start
 
-### Prerequisites
+Prerequisites
 
 ```bash
 pip install -r requirements.txt
